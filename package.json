@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/gitmurali/Tola/issues"
   },
-  "homepage": "https://github.com/gitmurali/Tola#readme"
+  "homepage": "https://github.com/gitmurali/Tola#readme",
+  "dependencies": {
+    "express": "^4.15.5",
+    "mocha": "^3.5.3",
+    "mongoose": "^4.11.13"
+  }
 }
