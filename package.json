@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon --exec 'mocha --recursive -R min'"
+    "test": "NODE_ENV=test nodemon --exec 'mocha --recursive -R min'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gitmurali/Tola#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.15.5",
     "mocha": "^3.5.3",
     "mongoose": "^4.11.13",
