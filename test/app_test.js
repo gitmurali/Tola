@@ -8,7 +8,7 @@ describe('The express app', () => {
           .get('/api')
           .expect(200, done);
     });
-    it('expects response', (done) => {
+    it('expects response to have {hi: there}', (done) => {
        request(app)
          .get('/api')
          .end((error, response) => {
