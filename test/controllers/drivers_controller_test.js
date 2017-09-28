@@ -19,4 +19,26 @@ describe('Driver controller', (done) => {
         });
     });
   });
+
+  it('GET to /api/drivers finds drivers in a location', done => {
+    const xDriver = new Driver({
+      email: 'x@test.com',
+      geometry: {type: 'Point', coordinates: [-123.3323234, 47.7655678]}
+    });
+    const yDriver = new Driver({
+      email: 'y@test.com',
+      geometry: {type: 'Point', coordinates: [-80.234, 25.798]}
+    });
+
+    Promise.all([xDriver.save(), yDriver.save()])
+      .then(() => {
+        request(app)
+          .get('/api/drivers?lng=-80&lat=25')
+          .end((err, response) => {
+          assert(response.body.length === 1);
+          assert(response.body[0].obj.email === 'y@test.com');
+            done();
+          })
+      });
+  });
 });
