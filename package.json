@@ -20,7 +20,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.15.5",
     "mocha": "^3.5.3",
-    "mongoose": "^4.11.13",
+    "mongoose": "^5.7.5",
     "supertest": "^3.0.0"
   }
 }
