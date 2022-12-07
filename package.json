@@ -18,7 +18,7 @@
   "homepage": "https://github.com/gitmurali/Tola#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.15.5",
+    "express": "^4.17.3",
     "mocha": "^3.5.3",
     "mongoose": "^4.11.13",
     "supertest": "^3.0.0"
